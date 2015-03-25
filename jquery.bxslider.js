@@ -419,7 +419,7 @@
 					newElWidth = (wrapWidth - (slider.settings.slideMargin * (slider.settings.minSlides - 1))) / slider.settings.minSlides;
 				}else if(slider.settings.shrinkItems){
 					var slidesToShow = Math.ceil((wrapWidth + slider.settings.slideMargin) / (newElWidth + slider.settings.slideMargin));
-					newElWidth = Math.floor((wrapWidth + slider.settings.slideMargin) / slidesToShow - slider.settings.slideMargin);
+					newElWidth = Math.ceil((wrapWidth + slider.settings.slideMargin) / slidesToShow - slider.settings.slideMargin);
 				}
 			}
 			return newElWidth;
